@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="lib/css/main.css" type="text/css" rel="stylesheet" media="screen">
+    <link href="lib/js/prettify/prettify.css" type="text/css" rel="stylesheet"/>
+    <title>TideSDK KitchenSink</title>
+    <style type="text/css">
+    .course{
+        font-family: helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .course-title {
+        font-size: 20px;
+
+    }
+    .course-subdescription{
+        color: #294860;
+    }
+    .description {
+        height:100%;
+        overflow: hidden;
+        text-align: justify;
+    
+    }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span3">
+            <img class="logo" src="lib/img/tidesdk-logo.png">
+        </div>
+        <div class="span9">
+            <h1>KitchenSink
+                <small id="section-title"></small>
+            </h1>
+        </div>
+    </div>
+    <div class="row-fluid">
+        <div class="sidebar span3" style="border : 1px red solid">
+            <!--Container for sidebar menu -->
+
+        </div>
+        <div class="span9 content">
+            <div id="meta-area">
+                <span class="runs">Runs on: <img src="lib/img/win-ico.png" id="ico-win" title="Windows"> <img src="lib/img/mac-ico.png" id="ico-mac" title="Mac"> <img src="lib/img/lin-ico.png" id="ico-lin" title="Linux"></span>
+            
+                <div class="alert alert-error" id="os-alert" style="display: none;">
+                    <b>Heads up!</b> This demo cannot be shown on your system.
+                </div>
+            </div>
+
+            <div id="main-content">
+
+                        <!-- Maintained by the application -->
+                        <div class="row span12">
+                            <div class="span5"></div>
+                            <div class="span7">
+                            Select level
+                                <select>
+                                    <option>All</option>
+                                    <option>Bla1</option>
+                                    <option>Bla1</option>
+                                </select>
+                                Search 
+                                  <input type="text" class="input-medium search-query">
+
+                            </div>
+                        </div>
+
+                        <div class="row-fluid">
+                        <div id="course-list" class= "course" style="border: 1px solid red">
+                            <div class="span3">
+                                Image will be here
+                            </div>
+
+                            <div class="span8">
+                            <a class="course-title" href="#" > Intro to computer science </a> 
+                            <span class="course-subdescription">Build a Search Engine & a Social Network </span><br>
+
+
+                            <p id = "description" class="description" > Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                            
+                            </p>
+                            <a href="google com" class="pull-right"> view it in browser </a>
+                            </div>
+
+                        </div><!-- ending span 3 for course list -->
+                        </div><!-- ending row fluid -->
+            </div>
+        </div>
+    </div>
+</div>
+<script src="lib/js/jquery-1.8.1.min.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+})
+    // $.getJSON("https://www.udacity.com/public-api/v0/courses", function(data) {
+    //     var str= "";var title=""; var link ="";
+    //     $.each(data.courses, function(count) {
+    //         title = data.courses[count].title;
+    //         link = data.courses[count].homepage;
+    //         $("#course-list").append("<a href=" + link + "> "+ title +" </a><br>");
+
+    //     });
+    //     console.log(data);
+    // });
+
+</script>
+<!-- <script src="lib/js/underscore.js"></script>
+<script src="lib/js/backbone.js"></script>
+<script src="lib/js/prettify/prettify.js"></script>
+<script src="lib/js/require.js" data-main="app/app"></script> -->
+</body>
+</html>

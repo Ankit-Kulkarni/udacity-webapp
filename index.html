@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="bootstrap.min.css" type="text/css" rel="stylesheet" media="screen">
+    
+    <title>TideSDK KitchenSink</title>
+    <style type="text/css">
+    .course{
+        font-family: helvetica, sans-serif;
+        font-size: 16px;
+    }
+    .course-title {
+        font-size: 20px;
+
+    }
+    .course-level {
+        color: red;
+    }
+    .course-subdescription{
+        color: #294860;
+    }
+    .description {
+        height:100%;
+        overflow: hidden;
+        text-align: justify;
+    
+    }
+    .header {
+        background-color: orange;
+        height:100%;
+        overflow: hidden;
+    }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 header" style="border:1px blue solid">
+            <div class="col-md-6">
+                    <img class="img-responsive" src="lib/img/udacity4.png" width="100%" height="100%">
+            </div>
+            <div class="col-md-6">
+                <h1>Udacity
+                    <small id="section-title">MOOC</small>
+                </h1>
+            </div> 
+        </div>
+
+
+        <!-- <div class="col-md-3">
+            <img class="logo" src="lib/img/tidesdk-logo.png">
+        </div>
+        <div class="col-md-9">
+            <h1>KitchenSink
+                <small id="section-title"></small>
+            </h1>
+        </div> -->
+    </div>
+
+    <div class="row">
+        <div class="sidebar col-md-3 "><!--Container for sidebar menu -->
+                <!-- sidebar -->
+                <br><br>
+                <div id="tracks" class="list-group"  >
+                  <a href="#" class="list-group-item active  ">
+                    Udacity
+                  </a>
+                </div>
+        </div>
+        <!-- ending the side row -->
+        <div class="col-md-9" style="border:5px solid grey">
+            <div class="row">
+                <div class="col-md-12" >
+                    <div class="row">
+                        <span class="runs pull-right">Runs on: <img src="lib/img/win-ico.png" id="ico-win" title="Windows"> <img src="lib/img/mac-ico.png" id="ico-mac" title="Mac"> <img src="lib/img/lin-ico.png" id="ico-lin" title="Linux"></span>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                        <label>Level</label>
+                            <select id="level-list" class="form-control" onchange="sort(this.value)">
+                                <option value="All">All</option>
+                                <option value="Beginner">Beginner</option>
+                                <option value="Intermediate">Intermediate</option>
+                                <option value="Advanced">Advanced</option>
+                            </select>
+                        </div>
+                        <div class="col-md-4">
+                            <label>Search</label>
+                              <input type="text"  class="input-medium search-query form-control">
+                        </div>
+                        <div class="col-md-4">
+                        <br><br>
+                              <a class="pull-right" href=""> Refresh course list</a>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+            </div><!-- row for top nav bar -->
+            <div class="row">
+                <div id="ajax-load"></div>
+                <div id="course-list" class="col-md-12" >
+                <nav>
+                  <ul class="pager">
+                    <li class="disabled"><a href="#" class="pull-left " >Previous</a></li>
+                    <li><a class="pull-right" onclick="changePage()">Next</a></li>
+                  </ul>
+                </nav>
+                </div>
+            </div><!-- row for content -->
+        </div>
+
+    </div>
+</div>
+<script src="lib/js/jquery-1.8.1.min.js"></script>
+<script src="lib/js/bootstrap.min.js"></script>
+<script src="custom.js"></script>
+
+</body>
+</html>
